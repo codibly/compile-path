@@ -51,6 +51,8 @@
   "devDependencies": {
     "@commitlint/config-conventional": "^8.0.0",
     "@types/jest": "^24.0.0",
+    "@types/path-to-regexp": "^1.7.0",
+    "@types/qs": "^6.5.3",
     "commitlint": "^8.0.0",
     "git-cz": "^3.0.1",
     "husky": "^2.3.0",
@@ -83,5 +85,9 @@
         "prerelease": true
       }
     ]
+  },
+  "dependencies": {
+    "path-to-regexp": "^3.1.0",
+    "qa": "^0.0.1"
   }
 }
