@@ -12,6 +12,7 @@ script:
   - yarn lint
 
 deploy:
+  api_key: c6167507-5d07-4c27-b6b6-672d3aeedc55
   provider: script
   skip_cleanup: true
   script:
