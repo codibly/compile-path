@@ -2,17 +2,13 @@ language: node_js
 node_js:
   - 10
   - 8
-
 install:
   - yarn install --frozen-lockfile
-
 script:
   - yarn build
   - yarn test
   - yarn lint
-
 deploy:
-  api_key: c6167507-5d07-4c27-b6b6-672d3aeedc55
   provider: script
   skip_cleanup: true
   script:
@@ -20,3 +16,5 @@ deploy:
   on:
     all_branches: true
     node_js: 10
+  api_key:
+    secure: xwMYjiIN/viy3isU3dkmv9LP6KmCYYCGzNGbSOPKUZXUvCRBsCGhaa9DncH3ajdXEBGsFGupRDLxKzPhNnUcQD2471vRJmaKIoZOJi/T50q61XIT0eozZrPsEg8e+VElhS4mVsggAFXmxuNYcYLnoymbVEF1IiW4jjUl1bBtjWSyXVk8b01k4Fqeu5XuTtdz1Vnqh7EfKvdtlhB1JopmtWFU5nS0WnqWvdVCZ8mPR/aI40InhKpmOaXnSR+5up0ajBEo6aq1kRZIrpH9ZhpEwLkFJ9z11QRdXm3L51AfnbZ+aGv+hFG+rB72sQvGcpmbIn2raVKWMwODuW1n3FzoYyNqTrV3IHEaJTHM06+Z+xt6RZ+qQcLP7xeNumzXUKTnysH9vnpBcnE5d5gaxNig8KWUnpS21prLtQ21TCBkENlhYQR5nKnCoNTsvgx4FcbotXADbv0lEVtm4R9vWD2+eHXxREJd7jyho5i0ZxoP+pPtTI6PJme9BmR7eRtmoe4qD4hg0O3uM9scqE53UITdmJ802XDd3WofCMGpmTtN99HXZDX35Z5E3/bq6/4B6rW6zmUtrjGQEp+BbfbjdNXN7QOn1K6uLNmgoX/O8HDVhzvd+KhKh7YA5XZkf2sIrnJmmxBYLPpOZ81fQcBODkZwFPgJrw9eb+OooKycgF4O6pY=
