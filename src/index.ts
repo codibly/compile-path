@@ -2,7 +2,7 @@ import { compile, PathFunction } from "path-to-regexp";
 import { stringify as stringifyQuery } from "qs";
 
 interface CompilePathParams {
-  [key: string]: string | number | string[];
+  [key: string]: string | number | string[] | number[];
 }
 interface CompilePathQuery {
   [key: string]: any;
